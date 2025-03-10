@@ -1,3 +1,5 @@
+#include "memmgnt.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -48,7 +50,7 @@ int main() {
   scanf("%zu", &n);
   k = (n + 1) / 2;
 
-  int* ar = (int*) malloc(n * sizeof(int));
+  int* ar = (int*) smalloc(n * sizeof(int));
   for (size_t i = 0; i < n; i++) {
     scanf("%d", (ar + i));
   }
